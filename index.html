@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Developer Landing Page</title>
+
+    <!-- Tailwind 4 -->
+    <script src="tailwind.js"></script>
+
+    <!-- Font Awesome untuk ikon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="font-sans bg-gradient-to-br from-blue-50 to-purple-50 min-h-screen"
+  >
+    <!-- Header Navigation -->
+    <header class="bg-white shadow-md">
+      <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="indek.html" class="text-2xl font-bold text-blue-700">Wahyu Rizky</a>
+        <nav>
+          <ul class="flex gap-6 text-lg">
+            <li><a href="indek.html" class="hover:text-blue-600 transition-colors duration-200">Beranda</a></li>
+            <li><a href="#layanan" class="hover:text-blue-600 transition-colors duration-200">Layanan</a></li>
+            <li><a href="#tentang" onclick="document.getElementById('tentang').scrollIntoView({behavior: 'smooth'}); return false;" class="hover:text-blue-600 transition-colors duration-200">Tentang Saya</a></li>
+            <li><a href="#kontak" onclick="document.getElementById('kontak').scrollIntoView({behavior: 'smooth'}); return false;" class="hover:text-blue-600 transition-colors duration-200">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Hero Section: Perkenalan Layanan -->
+    <section class="py-16 bg-gradient-to-br from-blue-100 to-purple-100">
+      <div class="container mx-auto px-4 flex flex-col items-center text-center">
+        <img src="assets/hero.png" alt="Foto Profil" class="w-32 h-32 rounded-full mb-6 shadow-lg" />
+        <h1 class="text-4xl font-bold mb-4 text-blue-700">Solusi Website Modern & Kreatif</h1>
+        <p class="text-lg text-gray-700 mb-6 max-w-xl">
+          Selamat datang! Saya Wahyu Rizky, Web Developer & UI Designer yang siap membantu Anda membangun website profesional, responsif, dan menarik untuk bisnis atau personal branding Anda. Dengan pengalaman lebih dari 3 tahun, saya menawarkan layanan pembuatan website, desain UI/UX, optimasi mobile, dan SEO maintenance.
+        </p>
+        <a href="#layanan" class="bg-blue-600 text-white px-6 py-2 rounded-full shadow hover:bg-blue-700 transition">Lihat Layanan</a>
+      </div>
+    </section>
+
+
+    <!-- Layanan/Jasa Section -->
+    <section id="layanan" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Layanan Saya</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Layanan 1 -->
+          <div class="bg-blue-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+            <div class="w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-4 bg-white text-blue-600">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Pembuatan Website</h3>
+            <p class="text-gray-600">Membangun website custom sesuai kebutuhan bisnis Anda dengan desain modern dan responsif.</p>
+          </div>
+          <!-- Layanan 2 -->
+          <div class="bg-blue-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+            <div class="w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-4 bg-white text-blue-600">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">UI/UX Design</h3>
+            <p class="text-gray-600">Mendesain tampilan website yang menarik, mudah digunakan, dan meningkatkan pengalaman pengguna.</p>
+          </div>
+          <!-- Layanan 3 -->
+          <div class="bg-blue-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+            <div class="w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-4 bg-white text-blue-600">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Optimasi Mobile</h3>
+            <p class="text-gray-600">Membuat website Anda tampil optimal di semua perangkat, terutama smartphone dan tablet.</p>
+          </div>
+          <!-- Layanan 4 -->
+          <div class="bg-blue-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+            <div class="w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-4 bg-white text-blue-600">
+              <i class="fas fa-search"></i>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">SEO & Maintenance</h3>
+            <p class="text-gray-600">Optimasi SEO dan perawatan website agar selalu aman, cepat, dan mudah ditemukan di Google.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Tentang Saya Section -->
+  <section id="tentang" class="py-16 bg-purple-50">
+      <div class="container mx-auto px-4 max-w-2xl text-center">
+        <img src="assets/hero.png" alt="Foto Saya" class="w-32 h-32 rounded-full mx-auto mb-6 shadow-lg" />
+        <h2 class="text-3xl font-bold mb-6 text-purple-700">Tentang Saya</h2>
+        <p class="text-gray-700 text-lg mb-4">Saya Wahyu Rizky, seorang Web Developer & UI Designer yang berdomisili di Sumatera Utara. Saya memiliki pengalaman lebih dari 1 bulan dalam membangun website modern, responsif, dan ramah pengguna untuk berbagai klien dan bisnis.</p>
+        <p class="text-gray-600 mb-4">Saya sangat antusias dengan teknologi web terbaru dan selalu berusaha memberikan solusi terbaik untuk setiap proyek. Selain itu, saya juga aktif mengikuti pelatihan dan bootcamp untuk meningkatkan skill di bidang desain dan pengembangan web.</p>
+      </div>
+    </section>
+
+  <!-- Kontak/CTA Section -->
+  <section id="kontak" class="py-12 bg-gradient-to-r from-blue-500 to-purple-500">
+      <div class="container mx-auto px-4 text-center text-white">
+        <h2 class="text-2xl font-bold mb-4">Tertarik Bekerja Sama?</h2>
+        <p class="mb-6">Hubungi saya melalui kontak berikut untuk konsultasi gratis:</p>
+        <div class="flex flex-col items-center gap-3 mb-6">
+          <a href="mailto:budi.santoso@email.com" class="text-white hover:underline"><i class="fas fa-envelope mr-2"></i>kiky.manjo@gmail.com</a>
+          <a href="tel:081234567890" class="text-white hover:underline"><i class="fas fa-phone mr-2"></i>0812-748-7077</a>
+          <span><i class="fas fa-map-marker-alt mr-2"></i>Sumatera Utara</span>
+        </div>
+        <a href="mailto:budi.santoso@email.com" class="bg-white text-blue-600 px-6 py-2 rounded-full font-semibold shadow hover:bg-gray-100 transition">Kirim Email</a>
+      </div>
+    </section>
+  </body>
+</html>
